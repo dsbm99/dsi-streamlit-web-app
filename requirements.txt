@@ -1,19 +1,14 @@
-# Always upgrade pip/setuptools/wheel first to ensure binary wheels are used
-pip>=23.2
-setuptools>=65.0
+pip>=25.0
+setuptools>=70.0
 wheel
 
-# Core scientific stack (ensure these are installed before scikit-learn)
 numpy==1.24.3
 scipy==1.10.1
 pandas==1.4.4
 joblib==1.1.1
-
-# Upgrade scikit-learn to a version that ships wheels for Python 3.10
 scikit-learn==1.2.2
 
-# Streamlit (your version is very old; if you must keep it, leave as-is)
-streamlit==0.76.0
-
 protobuf==3.20.3
+streamlit==1.36.0
+
 
