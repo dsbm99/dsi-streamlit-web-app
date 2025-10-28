@@ -1,14 +1,23 @@
-pip>=25.0
-setuptools>=70.0
+# --- Core compatibility setup ---
+pip>=23.2
+setuptools<65.0     # Avoids pkg_resources warnings
 wheel
 
-numpy==1.24.3
-scipy==1.10.1
+# --- Numeric and scientific stack ---
+numpy==1.23.5
+scipy==1.9.3
 pandas==1.4.4
 joblib==1.1.1
-scikit-learn==1.2.2
 
+# --- Machine learning ---
+scikit-learn==1.0.1
+
+# --- Streamlit and UI ---
+streamlit==0.76.0
 protobuf==3.20.3
-streamlit==1.36.0
+
+# --- Optional dependencies Streamlit might need ---
+altair==4.2.2
+click==8.0.0
 
 
